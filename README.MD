@@ -18,7 +18,7 @@ end
 
 ```ruby
 target 'project_name' do
-pod 'AppoxeeLocationServices', :git => 'https://github.com/', :tag => '4.0.14'
+pod 'AppoxeeLocationServices', :git => 'https://github.com/AppoxeeMobile/iosGeoArtifacts', :tag => '4.0.14'
 end
 ```
 
