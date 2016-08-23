@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AppoxeeLocationManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AppoxeeLocationServices </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Teradata</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/lastLocation">lastLocation</option>
+		
+		<option value="//api/name/logLevel">logLevel</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/shared">+ shared</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/disableLocationMonitoring">- disableLocationMonitoring</option>
+		
+		<option value="//api/name/enableLocationMonitoring">- enableLocationMonitoring</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AppoxeeLocationManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AppoxeeLocationManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Appoxee Location manager is the main interface API for developers who implements Appoxee Location Services.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/logLevel" title="logLevel"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logLevel">&nbsp;&nbsp;logLevel</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>between 1 - 5, where 1 prints all logs and 5 prints critical logs.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSInteger logLevel</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppoxeeLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The delegate for recieving <a href="../Protocols/AppoxeeLocationManagerDelegate.html">AppoxeeLocationManagerDelegate</a> events.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak, nullable) id&lt;AppoxeeLocationManagerDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppoxeeLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lastLocation" title="lastLocation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lastLocation">&nbsp;&nbsp;lastLocation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The last known location of the user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, nullable) CLLocation *lastLocation</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppoxeeLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shared" title="shared"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shared">+&nbsp;shared</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method for getting a singleton instance of AppoxeeLocationManager</p>
+
+<pre><code>
+AppoxeeLocationManager *locationManager = [AppoxeeLocationManager shared];
+</pre>
+
+
+<p></code></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nullable instancetype)shared</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>AppoxeeLocationManager an Instance Type of AppoxeeLocationManager.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppoxeeLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableLocationMonitoring" title="enableLocationMonitoring"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableLocationMonitoring">&ndash;&nbsp;enableLocationMonitoring</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method for starting monitoring for geo fences. Method will set a UIApplicationBackgroundFetchIntervalMinimum if application supports background fetch.
+@attention Authorization status must be kCLAuthorizationStatusAuthorizedAlways or kCLAuthorizationStatusAuthorized, else method will not execute.</p>
+
+<pre><code>
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [[Appoxee shared] engageWithLaunchOptions:launchOptions andDelegate:self andSDKID:@"sdk.id" andAppSecret:@"app.secret"];
+    // Set an observer, and enable location monitoring when AppoxeeSDK is ready. This can also be achived when listening to @"APX_Ready" notification with NSNotificationCenter
+    [[Appoxee shared] addObserver:self forKeyPath:@"isReady" options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld) context:NULL];
+
+    return YES;
+}
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if ([keyPath isEqualToString:@"isReady"]) {
+
+        [[Appoxee shared] removeObserver:self forKeyPath:@"isReady"];
+        [[AppoxeeLocationManager shared] enableLocationMonitoring];
+    }
+}
+</pre>
+
+
+<p></code></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)enableLocationMonitoring</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppoxeeLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/disableLocationMonitoring" title="disableLocationMonitoring"></a>
+	<h3 class="method-title"><code><a href="#//api/name/disableLocationMonitoring">&ndash;&nbsp;disableLocationMonitoring</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method for stoping monitoring for geo fences. Method will set a UIApplicationBackgroundFetchIntervalNever if application supports background fetch.</p>
+
+<pre><code>
+[[AppoxeeLocationManager shared] disableLocationMonitoring];
+</pre>
+
+
+<p></code></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)disableLocationMonitoring</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AppoxeeLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Teradata. All rights reserved. Updated: 2016-08-23</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
