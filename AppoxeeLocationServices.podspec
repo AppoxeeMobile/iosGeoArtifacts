@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/AppoxeeMobile/iosGeoArtifacts.git", :tag => "4.0.14" }
   s.platform     = :ios, "7.0"
   s.ios.framework = 'CoreLocation'
+  s.ios.library = 'sqlite3'
   s.ios.vendored_frameworks = "SDK/AppoxeeLocationServices.framework"
   s.preserve_paths = 'SDK/AppoxeeLocationServices.framework'
   s.dependency 'AppoxeeSDK', '~> 4.0.14'
