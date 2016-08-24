@@ -9,7 +9,7 @@ Integration
 
 ```ruby
 target 'project_name' do
-pod 'AppoxeeLocationServices'
+    pod 'AppoxeeLocationServices'
 end
 ```
 
@@ -18,14 +18,14 @@ end
 
 ```ruby
 target 'project_name' do
-pod 'AppoxeeLocationServices', :git => 'https://github.com/AppoxeeMobile/iosGeoArtifacts', :tag => '4.0.14'
+    pod 'AppoxeeLocationServices', :git => 'https://github.com/AppoxeeMobile/iosGeoArtifacts', :tag => '4.0.14'
 end
 ```
 
 * Manual
 
     * Drag and drop the ```AppoxeeLocationServices.framework``` to your project.
-    * Link ```CoreLocation.framework``` to your project.
+    * Link ```CoreLocation.framework``` and ```SQLite3``` to your project.
 
 
 Configuration file
