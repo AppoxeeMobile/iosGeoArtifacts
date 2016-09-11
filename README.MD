@@ -5,7 +5,7 @@ This repository contains the AppoxeeLocationServices iOS SDK.
 Integration
 -----------
 
-* Cocoa pods
+**Cocoa pods**
 
 ```ruby
 target 'project_name' do
@@ -13,17 +13,19 @@ target 'project_name' do
 end
 ```
 
-*OR*
+**OR**
 
 
 ```ruby
 target 'project_name' do
-    pod 'AppoxeeLocationServices', :git => 'https://github.com/AppoxeeMobile/iosGeoArtifacts', :tag => '4.0.14'
+    pod 'AppoxeeLocationServices', :git => 'https://github.com/AppoxeeMobile/iosGeoArtifacts', :tag => '4.1.0'
 end
 ```
 
-* Manual
+**Manual**
 
+    * Drag and drop the ```AppoxeeSDK.framework``` to your project.
+    * Drag and drop the ```AppoxeeSDKResources.bundle``` to your project.
     * Drag and drop the ```AppoxeeLocationServices.framework``` to your project.
     * Link ```CoreLocation.framework``` and ```SQLite3``` to your project.
 
@@ -31,7 +33,7 @@ end
 Configuration file
 ------------------
 
-Make sure to provide an ```AppoxeeConfiguration.plist``` file for [AppoxeeSDK](https://github.com/AppoxeeMobile/iosArtifacts#configuration-file).
+Make sure to provide an ```AppoxeeConfig.plist``` file for [AppoxeeSDK](https://github.com/AppoxeeMobile/iosArtifacts#configuration-file).
 
 Implementation
 --------------
@@ -72,7 +74,7 @@ Implementation
         if (keyPath == "isReady") {
             
             Appoxee.shared()?.removeObserver(self, forKeyPath: "isReady")
-            AppoxeeLocationManager.shared().enableLocationMonitoring();
+            AppoxeeLocationManager.shared().enableLocationMonitoring()
         }
     }
 ```

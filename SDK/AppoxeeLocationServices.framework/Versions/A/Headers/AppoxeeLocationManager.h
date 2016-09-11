@@ -32,7 +32,7 @@
  
     NSLog(@"Entered location id of: %@, of coordinates: %.2f | %.2f, with radius: %.2f", geoRegion.identifier, geoRegion.center.latitude, geoRegion.center.longitude, geoRegion.radius);
  }
- </pre></code>
+ </code></pre>
  */
 - (void)locationManager:(nonnull AppoxeeLocationManager *)manager didEnterGeoRegion:(nonnull CLCircularRegion *)geoRegion;
 
@@ -47,7 +47,7 @@
  
     NSLog(@"Entered location id: %@, of coordinates: %.2f | %.2f, with radius: %.2f", geoRegion.identifier, geoRegion.center.latitude, geoRegion.center.longitude, geoRegion.radius);
  }
- </pre></code>
+ </code></pre>
  */
 - (void)locationManager:(nonnull AppoxeeLocationManager *)manager didExitGeoRegion:(nonnull CLCircularRegion *)geoRegion;
 
@@ -79,7 +79,7 @@
  @brief Method for getting a singleton instance of AppoxeeLocationManager
  <pre><code>
  AppoxeeLocationManager *locationManager = [AppoxeeLocationManager shared];
- </pre></code>
+ </code></pre>
  @return AppoxeeLocationManager an Instance Type of AppoxeeLocationManager.
  */
 + (nullable instancetype)shared;
@@ -105,7 +105,7 @@
         [[AppoxeeLocationManager shared] enableLocationMonitoring];
     }
  }
- </pre></code>
+ </code></pre>
  */
 - (void)enableLocationMonitoring;
 
@@ -114,7 +114,7 @@
  @brief Method for stoping monitoring for geo fences. Method will set a UIApplicationBackgroundFetchIntervalNever if application supports background fetch.
  <pre><code>
  [[AppoxeeLocationManager shared] disableLocationMonitoring];
- </pre></code>
+ </code></pre>
  */
 - (void)disableLocationMonitoring;
 
